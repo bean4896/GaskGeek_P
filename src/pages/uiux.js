@@ -8,11 +8,11 @@ import '../index.css';
 
 const Uiux = () => {
     const [item, setItem] = useState(UiData);
-    const filterItems = [...new Set(UiData.map((Val) => Val.category))];
+    const filterItems = [...new Set(UiData.map((Val) => Val.category).flat())];
 
     const filterItem = (filcat) => {
         const newItem = UiData.filter((newVal) => {
-            return newVal.category === filcat;
+            return newVal.category.includes(filcat);
             // comparing category for displaying data
         });
         setItem(newItem);
