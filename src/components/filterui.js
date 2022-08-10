@@ -26,8 +26,8 @@ const Filterui = ({ filterItem, setItem, filterBtnList }) => {
             setAllActive('');
             setActive(!isActive);
             setBtnValue(Val)
-            console.log(e.target);
-            console.log(btnValue);
+            // console.log(e.target);
+            // console.log(btnValue);
           }
           return (
             <button className={btnValue === Val ? 'filter-btn active' : 'filter-btn'} onClick={clickFilterHandler}

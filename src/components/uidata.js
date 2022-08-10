@@ -37,7 +37,6 @@ const UiData = [
     url: "https://miksks.com/", 
     img: "./images/ui_miksks.jpg",
     category: ["Illustration","Icons",'Game'],
-
     desc: "A good resources for nice spacy🪐 designs.",
   },
   {
@@ -52,7 +51,7 @@ const UiData = [
     id: "7",
     title: "Device Shots",
     url: "https://deviceshots.com/",
-    category: ["Mockup","Game"],
+    category: ["Mockup"],
     img: "/images/ui_deviceshots.jpg",
     desc: "Easily design device mockups for presentations or to share on social platforms.",
   },
@@ -104,7 +103,7 @@ const UiData = [
     title: "Dribbble",
     url: "https://dribbble.com/search/dashboard",
     
-    category: ["Dashboard",'Colors'],
+    category: ["Dashboard"],
       
     img: "./images/ui_dribbble.jpg",
     desc: "Dribbble has all kinds of resources for designers, espeacilly for SaaS.",
@@ -113,7 +112,7 @@ const UiData = [
     id: "14",
     title: "ArtBreeder",
     url: "https://www.artbreeder.com/",
-    category: ["AI Image","Dashboard",'Colors'],
+    category: ["AI Image"],
     img: "./images/ui_artbreeder.webp",
     desc: "Generate and modify images of faces, landscapes, and paintings, among other categories.",
   },

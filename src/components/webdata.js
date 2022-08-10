@@ -3,7 +3,7 @@ const WebData = [
     {
       id: "1",
       title: "Lusion",
-      category: "Interactive",  
+      category: ["Interactive", "Web Design"],
       url: "https://lusion.co/",
       img: './images/web_lusion.jpg',
       desc: "Award winning website with insane Three.js interactive.",
@@ -11,7 +11,7 @@ const WebData = [
     {
       id: "2",
       title: "Radioactive Crocs Club",
-      category: "Interactive",
+      category: ["Interactive", "Web Design"],
       url:"https://radioactivecrocsclub.com/",
       img: "./images/web_crocs.jpg",
       desc: "A very good example of 3D metaverse style web design & awesome web interactions.",
@@ -19,7 +19,7 @@ const WebData = [
     {
       id: "3",
       title: "Tailwind CSS",
-      category: "Framework",
+      category: ["Framework"],
       url:"https://tailwindcss.com/",
       img: "./images/web_tailwind.jpg",
       desc: "Modern & beautiful CSS framework, also super easy to use.",
@@ -27,7 +27,7 @@ const WebData = [
     {
       id: "4",
       title: "Material UI",
-      category: "Framework",
+      category: ["Framework"],
       url:"https://mui.com/",
       img: "./images/web_mui.jpg",
       desc: "Best React component library to build a modern dashboard UI.",
@@ -35,7 +35,7 @@ const WebData = [
     {
       id: "5",
       title: "Webflow",
-      category: "CMS",
+      category: ["CMS"],
       url:"https://webflow.com/",
       img: "./images/web_webflow.jpg",
       desc: "Probably the best CMS for web designers.",
@@ -43,7 +43,7 @@ const WebData = [
     {
       id: "6",
       title: "Hey Meta",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://www.heymeta.com/",
       img: "./images/web_heymeta.jpg",
       desc: "Check Website's meta info.",
@@ -51,7 +51,7 @@ const WebData = [
     {
       id: "7",
       title: "BuiltWith",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://builtwith.com/",
       img: "./images/web_builtwith.webp",
       desc: "Find out what websites are built with.",
@@ -59,7 +59,7 @@ const WebData = [
     {
       id: "8",
       title: "Why No Padlock",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://whynopadlock.com",
       img: "./images/web_padlock.jpg",
       desc: "A simple tool that will tell you about any insecure items on your SSL page.",
@@ -67,7 +67,7 @@ const WebData = [
     {
       id: "10",
       title: "Hosting Checker",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://hostingchecker.com/",
       img: "./images/web_hosting.jpg",
       desc: "To find out where a website is hosted.",
@@ -75,7 +75,7 @@ const WebData = [
     {
       id: "11",
       title: "Wayback Machine",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://archive.org/web/",
       img: "./images/web_wayback.jpg",
       desc: "A time machine for you to check website's history.",
@@ -83,7 +83,7 @@ const WebData = [
     {
       id: "12",
       title: "Namecheap",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://www.namecheap.com/",
       img: "./images/web_namecheap.jpg",
       desc: "Register a new domain with best deal (cheapest🙃).",
@@ -91,7 +91,7 @@ const WebData = [
     {
       id: "13",
       title: "Cloudflare CDN",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://www.cloudflare.com/cdn/",
       img: "./images/web_cfcdn.jpg",
       desc: "A must-have tool for website if you want it to be fast worldwide.",
@@ -99,7 +99,7 @@ const WebData = [
     {
       id: "14",
       title: "Glassmorphism",
-      category: "Framework",
+      category: ["Framework", "Web Design"],
       url:"https://hype4.academy/tools/glassmorphism-generator",
       img: "./images/web_glass.jpg",
       desc: "Generate the trending glass design inspired by MacOS Sur.",
@@ -107,7 +107,7 @@ const WebData = [
     {
       id: "15",
       title: "Quark",
-      category: "Interactive",
+      category: ["Interactive"],
       url:"https://myquark.cn/",
       img: "./images/web_quark.jpg",
       desc: "The official site of Quark (a chinese browser) showcased impressive 3D interactions.",
@@ -115,7 +115,7 @@ const WebData = [
     {
       id: "16",
       title: "Framer Motion",
-      category: "Framework",
+      category: ["Framework"],
       url:"https://www.framer.com/motion/",
       img: "./images/web_frame.jpg",
       desc: "Production-ready motion library for React.",
@@ -123,7 +123,7 @@ const WebData = [
     {
       id: "17",
       title: "Elementor",
-      category: "CMS",
+      category: ["CMS"],
       url:"https://elementor.com/",
       img: "./images/web_elementor.jpg",
       desc: "The best live & drag editor for WordPress.",
@@ -131,7 +131,7 @@ const WebData = [
     {
       id: "18",
       title: "WordPress",
-      category: "CMS",
+      category: ["CMS"],
       url:"https://wordpress.com/",
       img: "./images/web_wordpress.jpg",
       desc: "Still the most popular and most practical CMS in 2022.",
@@ -139,7 +139,7 @@ const WebData = [
     {
       id: "19",
       title: "Shopify",
-      category: "CMS",
+      category: ["CMS"],
       url:"https://www.shopify.com",
       img: "./images/web_shopify.jpg",
       desc: "The most suitable CMS for E-commerce.",
@@ -147,7 +147,7 @@ const WebData = [
     {
       id: "20",
       title: "Youmeme",
-      category: "Interactive",
+      category: ["Interactive"],
       url:"https://www.youmeme.io/",
       img: "./images/web_youmeme.jpg",
       desc: "Cute and creative parallax.",
@@ -155,7 +155,7 @@ const WebData = [
     {
       id: "21",
       title: "GT Metrix",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://gtmetrix.com/",
       img: "./images/web_gtmetrix.jpg",
       desc: "Check the speed of your website worldwide.",
@@ -163,7 +163,7 @@ const WebData = [
     {
       id: "22",
       title: "Rico's cheatsheets",
-      category: "Framework",
+      category: ["Framework"],
       url:"https://devhints.io/",
       img: "./images/web_ricos.jpg",
       desc: "Cheatsheets For Front-end.🤪",
@@ -171,7 +171,7 @@ const WebData = [
     {
       id: "23",
       title: "Bruno Simon",
-      category: "Interactive",
+      category: ["Interactive"],
       url:"https://bruno-simon.com/",
       img: "./images/web_BrunoSimon.jpg",
       desc: "Showcase the power of three.js.",
@@ -179,7 +179,7 @@ const WebData = [
     {
       id: "24",
       title: "SEO Site Check",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://seositecheckup.com/",
       img: "./images/web_seositecheck.jpg",
       desc: "All-In-One SEO Tool for your site",
@@ -187,7 +187,7 @@ const WebData = [
     {
       id: "25",
       title: "Similarweb",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://www.similarweb.com/",
       img: "./images/web_similarweb.webp",
       desc: "Business driven analysis tool for your and your business competitor.",
@@ -195,7 +195,7 @@ const WebData = [
     {
       id: "26",
       title: "WebGL",
-      category: "Interactive",
+      category: ["Interactive"],
       url:"https://experiments.withgoogle.com/experiments?tag=WebGL",
       img: "./images/web_webgl.jpg",
       desc: "Explore super cool interactive effects like fluid and glitch.",
@@ -203,7 +203,7 @@ const WebData = [
     {
       id: "27",
       title: "Windows 95",
-      category: "Interactive",
+      category: ["Interactive", "Web Design"],
       url:"https://best-of-sgj.webflow.io/",
       img: "./images/web_win95.jpg",
       desc: "Retro windows 95 as website, built by Alex Tokmakchiev.",
@@ -211,7 +211,7 @@ const WebData = [
     {
       id: "28",
       title: "Nes.CSS",
-      category: "Framework",
+      category: ["Framework"],
       url:"https://nostalgic-css.github.io/NES.css/",
       img: "./images/web_nes.jpg",
       desc: "NES-style CSS Framework.",
@@ -219,7 +219,7 @@ const WebData = [
     {
       id: "29",
       title: "Ping.pe",
-      category: "Tools",
+      category: ["Tools"],
       url:"https://ping.pe/",
       img: "./images/web_ping.jpg",
       desc: "Ping website speed all-over the world.",

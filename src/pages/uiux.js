@@ -13,6 +13,7 @@ const Uiux = () => {
     const filterItem = (filcat) => {
         const newItem = UiData.filter((newVal) => {
             return newVal.category.includes(filcat);
+            // return newVal.category === filcat;
             // comparing category for displaying data
         });
         setItem(newItem);

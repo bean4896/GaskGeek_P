@@ -8,12 +8,12 @@ import Filterweb from "../components/filterweb";
 
 const Web = () => {
     const [item, setItem] = useState(WebData);
+    const menuItems = [...new Set(WebData.map((Val) => Val.category).flat())];
 
-    const menuItems = [...new Set(WebData.map((Val) => Val.category))];
     const filterItem = (filcat) => {
 
         const newItem = WebData.filter((newVal) => {
-            return newVal.category === filcat;
+            return newVal.category.includes(filcat);
             // comparing category for displaying data
         });
         setItem(newItem);
