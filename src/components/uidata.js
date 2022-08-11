@@ -36,7 +36,7 @@ const UiData = [
     title: "Miksks",
     url: "https://miksks.com/", 
     img: "./images/ui_miksks.jpg",
-    category: ["Illustration","Icons",'Game'],
+    category: ["Illustration","Icons"],
     desc: "A good resources for nice spacy🪐 designs.",
   },
   {

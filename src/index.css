@@ -107,11 +107,17 @@ height: 100% !important;
 .goTop {
   display: block;
   position: fixed;
-  bottom: 5%;
+  bottom: 8%;
   left: 85%;
   cursor: pointer;
   line-height: 30px;
 }
 .goTopHidden {
   display: none;
+}
+.toggleIcon {
+  position: fixed;
+  bottom: 2%;
+  left: 85%;
+  line-height: 30px;
 }

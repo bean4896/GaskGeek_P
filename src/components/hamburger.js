@@ -1,18 +1,50 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-export default function Hamburger({ isOpen }) {
-  const [show, setShow] = useState(false);
+export default function Hamburger() {
+  
+  const ref = useRef()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsMenuOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", checkIfClickedOutside)
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+  }, [isMenuOpen])
+
+  const toggleHandler = () => {
+    setIsMenuOpen(oldState => !oldState);
+    document.getElementById('topline').style.color = 'red';
+  }
+
   return (
-    <div className={show ? "" : "group inline-block relative"}>
-      <button
-        onClick={() => setShow((prev) => !prev)}
-        className="md:hidden fixed right-4 bottom-5"
-      >
-        ToggleMobileMenu
+    <div className="container" ref={ref}>
+{/* toggle btn */}
+    <div>
+      <button className="toggleIcon group" onClick={toggleHandler}>
+        <div className="relative flex overflow-hidden items-center justify-center rounded-full w-10 h-10 transform transition-all bg-toxic duration-200">
+          <div className="flex flex-col justify-between w-[18px] h-[18px] transform transition-all duration-300 origin-center overflow-hidden">
+            <div id="topline" className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
+            <div id="secondline" className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
+            <div id="thirdline" className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
+          </div>
+        </div>
       </button>
-      {show ? (
+    </div>
+
+
+
+      {isMenuOpen &&  (
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -35,11 +67,11 @@ export default function Hamburger({ isOpen }) {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                   />
                 </svg>
@@ -56,11 +88,11 @@ export default function Hamburger({ isOpen }) {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
@@ -96,11 +128,11 @@ export default function Hamburger({ isOpen }) {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                   />
                 </svg>
@@ -109,7 +141,7 @@ export default function Hamburger({ isOpen }) {
             </ul>
           </div>
         </motion.div>
-      ) : null}
+      )}
     </div>
   );
 }
