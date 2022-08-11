@@ -25,4 +25,4 @@ return (
     </div>
 )
 }
-export default GoTopButton
+export default GoTopButton;

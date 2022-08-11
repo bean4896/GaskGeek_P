@@ -28,21 +28,19 @@ export default function Hamburger() {
   }
 
   return (
-    <div className="container" ref={ref}>
+    <div className="container md:hidden" ref={ref}>
 {/* toggle btn */}
     <div>
-      <button className="toggleIcon group" onClick={toggleHandler}>
+      <button className="toggleIcon group w-fit" onClick={toggleHandler}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-10 h-10 transform transition-all bg-toxic duration-200">
           <div className="flex flex-col justify-between w-[18px] h-[18px] transform transition-all duration-300 origin-center overflow-hidden">
-            <div id="topline" className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
-            <div id="secondline" className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
-            <div id="thirdline" className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
+            <div style={{transform: !isMenuOpen ? '' : 'rotate(45deg)'}} className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left"></div>
+            <div style={{transform: !isMenuOpen ? '' : 'translateX(-10px)'}}  className="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300"></div>
+            <div style={{transform: !isMenuOpen ? '' : 'rotate(-45deg)'}} className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left"></div>
           </div>
         </div>
       </button>
     </div>
-
-
 
       {isMenuOpen &&  (
         <motion.div
