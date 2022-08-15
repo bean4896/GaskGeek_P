@@ -1,37 +1,38 @@
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+const mobileNav = [
+  {
+    id: "1",
+    link: "/web",
+    title: 'Web',
+    svg: "https://lusion.co/",
+  },
+  {
+    id: "2",
+    link: "/uiux",
+    title: 'UI/UX',
+    svg: "https://lusion.co/",
+  },
+  {
+    id: "3",
+    link: "/threed",
+    title: '3D',
+    svg: "https://lusion.co/",
+  },
+  {
+    id: "4",
+    link: "/tutorials",
+    title: 'Learn',
+    svg: "https://lusion.co/",
+  },
+]
+
 
 export default function Hamburger() {
   const navigate = useNavigate();
   const ref = useRef()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const mobileNav = [
-    {
-      id: "1",
-      link: "/web",
-      title: 'Web',
-      svg: "https://lusion.co/",
-    },
-    {
-      id: "2",
-      link: "/uiux",
-      title: 'UI/UX',
-      svg: "https://lusion.co/",
-    },
-    {
-      id: "3",
-      link: "/threed",
-      title: '3D',
-      svg: "https://lusion.co/",
-    },
-    {
-      id: "4",
-      link: "/tutorials",
-      title: 'Learn',
-      svg: "https://lusion.co/",
-    },
-  ]
 
 
   useEffect(() => {
@@ -49,15 +50,20 @@ export default function Hamburger() {
     }
   }, [isMenuOpen])
 
-  const toggleHandler = () => {
+  const toggleBtnHandler = () => {
     setIsMenuOpen(oldState => !oldState);
+  }
+
+  const navHandler = (mobileNav) => {
+    setIsMenuOpen(oldState => !oldState);
+    console.log(`${mobileNav.link}`);
   }
 
   return (
     <div className="container md:hidden" ref={ref}>
 {/* toggle btn */}
     <div>
-      <button className="toggleIcon group w-fit" onClick={toggleHandler}>
+      <button className="toggleIcon group w-fit" onClick={toggleBtnHandler}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-10 h-10 transform transition-all bg-toxic duration-200">
           <div className="flex flex-col justify-between w-[18px] h-[18px] transform transition-all duration-300 origin-center overflow-hidden">
             <div style={{transform: !isMenuOpen ? '' : 'rotate(45deg)'}} className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left"></div>
@@ -78,11 +84,36 @@ export default function Hamburger() {
         >
           <div className=" bg-white border-gray-200 border-[1px] dark:bg-dmbgblackie dark:border-neutral-500 dark:border-[1px] rounded-lg shadow-xl">
             <ul className="list-none p-[18px] flex flex-col space-y-3">
+
               <div className="text-base font-bold text-neutral-600 dark:text-neutral-100 mt-0">
                 Explore
               </div>
+    
+        {/* {mobileNav.map(item => (
+          <li key={item.id} onClick={navHandler}>
+           <div className="flex space-x-2 threed-content align-middle">
+            <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
+                {item.title}
+                </div>
               
-              <Link onClick={toggleHandler}
+          </li>     
+        ))} */}
+
+
+              <Link onClick={toggleBtnHandler}
                 to="/web"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -103,7 +134,7 @@ export default function Hamburger() {
                 <li>Web</li>
               </Link>
 
-              <Link onClick={toggleHandler}
+              <Link onClick={toggleBtnHandler}
                 to="/uiux"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -124,7 +155,7 @@ export default function Hamburger() {
                 <li>UI/UX</li>
               </Link>
 
-              <Link onClick={toggleHandler}
+              <Link onClick={toggleBtnHandler}
                 to="/threed"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -143,7 +174,7 @@ export default function Hamburger() {
                 <li>3D</li>
               </Link>
 
-              <Link onClick={toggleHandler}
+              <Link onClick={toggleBtnHandler}
                 to="/tutorials"
                 className="flex space-x-2 threed-content align-middle"
               >
