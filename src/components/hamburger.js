@@ -1,11 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Hamburger() {
-  
+  const navigate = useNavigate();
   const ref = useRef()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const mobileNav = [
+    {
+      id: "1",
+      link: "/web",
+      title: 'Web',
+      svg: "https://lusion.co/",
+    },
+    {
+      id: "2",
+      link: "/uiux",
+      title: 'UI/UX',
+      svg: "https://lusion.co/",
+    },
+    {
+      id: "3",
+      link: "/threed",
+      title: '3D',
+      svg: "https://lusion.co/",
+    },
+    {
+      id: "4",
+      link: "/tutorials",
+      title: 'Learn',
+      svg: "https://lusion.co/",
+    },
+  ]
+
 
   useEffect(() => {
     const checkIfClickedOutside = e => {
@@ -24,7 +51,6 @@ export default function Hamburger() {
 
   const toggleHandler = () => {
     setIsMenuOpen(oldState => !oldState);
-    document.getElementById('topline').style.color = 'red';
   }
 
   return (
@@ -55,7 +81,8 @@ export default function Hamburger() {
               <div className="text-base font-bold text-neutral-600 dark:text-neutral-100 mt-0">
                 Explore
               </div>
-              <Link
+              
+              <Link onClick={toggleHandler}
                 to="/web"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -76,7 +103,7 @@ export default function Hamburger() {
                 <li>Web</li>
               </Link>
 
-              <Link
+              <Link onClick={toggleHandler}
                 to="/uiux"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -97,7 +124,7 @@ export default function Hamburger() {
                 <li>UI/UX</li>
               </Link>
 
-              <Link
+              <Link onClick={toggleHandler}
                 to="/threed"
                 className="flex space-x-2 threed-content align-middle"
               >
@@ -116,7 +143,7 @@ export default function Hamburger() {
                 <li>3D</li>
               </Link>
 
-              <Link
+              <Link onClick={toggleHandler}
                 to="/tutorials"
                 className="flex space-x-2 threed-content align-middle"
               >

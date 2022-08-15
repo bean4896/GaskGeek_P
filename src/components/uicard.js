@@ -19,7 +19,7 @@ const UiCard = ({ item }) => {
               transition={{ duration: 0.4 }}
               layout key={Val.id}>
               <a href={Val.url} target="_blank" rel="noreferrer">
-                <div className="bg-white rounded-lg border max-w-sm border-gray-200 shadow-md dark:bg-dmbgblackie dark:border-neutral-500 overflow-hidden hover:-translate-y-2 ease-in-out duration-200">
+                <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-dmbgblackie dark:border-neutral-500 overflow-hidden hover:-translate-y-2 ease-in-out duration-200">
                   <img src={Val.img} alt={Val.title} className='mb-4 featureimg' />
                   {/* 这里渲染  */}
                   {Val?.category?.map(item=><span className="card-tag" key={item}>{item}</span>)}
