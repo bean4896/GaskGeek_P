@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import { motion } from "framer-motion";
 function threed() {
   return (
     <div>
@@ -60,7 +60,12 @@ function threed() {
             </div>
           </div>
           {/* Right side*/}
-          <div className="ml-14 mb-10 h-full md:ml-64">
+          <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -50, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              layout className="ml-14 mb-10 h-full md:ml-64">
             <h1 className="pagetitle ml-6">3D World</h1>
 
             {/* Model box*/}
@@ -274,7 +279,7 @@ function threed() {
 
             </div>
 
-          </div>
+          </motion.div>
 
         </div>
       </div>
