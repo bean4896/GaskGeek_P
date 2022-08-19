@@ -224,6 +224,14 @@ const WebData = [
       img: "./images/web_ping.jpg",
       desc: "Ping website speed all-over the world.",
     },
+    {
+      id: "30",
+      title: "Metatags.io",
+      category: ["Tools"],
+      url:"https://metatags.io/",
+      img: "./images/web_meta.png",
+      desc: "Generate meta tags in one-click.",
+    },
   ];
    
   export default WebData;
