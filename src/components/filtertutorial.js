@@ -1,5 +1,5 @@
 import React from "react";
-import TutorialData from "./tutorialdata";
+import TutorialData from "./data/tutorialdata";
 
 const Filtertutorial = ({ filterItem, setItem, menuItems }) => {
     return (

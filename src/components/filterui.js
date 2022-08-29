@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import uiData from "./uidata";
+import uiData from "./data/uidata";
 import '../App.css';
 
 const Filterui = ({ filterItem, setItem, filterBtnList }) => {

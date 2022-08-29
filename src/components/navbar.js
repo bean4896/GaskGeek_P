@@ -1,5 +1,5 @@
 import React from 'react';
-import Toggle from '../components/toggle';
+import Toggle from './toggle';
 import logo from '../images/gas.png';
 import Dropdown from '../components/dropdown';
 import { Link } from 'react-router-dom';

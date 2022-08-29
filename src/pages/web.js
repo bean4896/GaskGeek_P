@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import '../index.css';
 import UiCard from "../components/uicard";
-import WebData from "../components/webdata";
+import WebData from "../components/data/webdata";
 import Filterweb from "../components/filterweb";
 
 const Web = () => {

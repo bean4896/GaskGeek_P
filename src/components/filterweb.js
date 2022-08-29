@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WebData from "./webdata";
+import WebData from "./data/webdata";
 
 const Filterweb = ({ filterItem, setItem, menuItems }) => {
   const [btnValue, setBtnValue] = useState("");

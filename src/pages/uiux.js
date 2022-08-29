@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from '../components/navbar';
-import UiData from '../components/uidata';
+import UiData from '../components/data/uidata';
 import UiCard from "../components/uicard";
 import Filterui from "../components/filterui";
 import { motion, AnimatePresence } from "framer-motion";

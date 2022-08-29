@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar";
-import TutorialData from "../components/tutorialdata";
+import TutorialData from "../components/data/tutorialdata";
 import TutorialCard from "../components/tutorialcard";
 import Filtertutorial from "../components/filtertutorial";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,7 +7,6 @@ import React, { useState } from "react";
 
 const Tutorial = () => {
   const [item, setItem] = useState(TutorialData);
-  const menuItems = [...new Set(TutorialData.map((Val) => Val.category))];
   const filterItem = (filcat) => {
 
       const newItem = TutorialData.filter((newVal) => {
