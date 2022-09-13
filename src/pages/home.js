@@ -11,7 +11,7 @@ function Home() {
         <div className="min-h-[85vh] flex-col mt-10 lg:grid lg:gap-6 lg:grid-cols-4 lg:row-span-2 lg:pb-8 pt-4">
           <div className="order-first row-span-1 col-span-2 rounded-lg mb-5 lg:mb-0">
             <div className="-mt-6">
-              <p className="bg-clip-text font-[900] bg-gradient-to-tr from-green-500 via-toxic to-yellow-500 text-transparent text-5xl 2xl:text-7xl pt-6 md:text-7xl">On-trend<br /> Inspiration <br /> Framework</p>
+              <p className="bg-clip-text font-[900] bg-gradient-to-tr from-green-500 via-toxic to-yellow-900 text-transparent text-5xl 2xl:text-7xl pt-6 md:text-7xl">On-trend<br /> Inspiration <br /> Framework</p>
               <br />
               <p className="text-stone-800 font-bold text-2xl 2xl:text-2xl mb-5 2xl:pb-8 dark:text-dmcontent">A curated resource to help you find trending design, inspiration and latest web technologies.</p>
             </div>
