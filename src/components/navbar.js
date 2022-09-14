@@ -1,6 +1,6 @@
 import React from 'react';
 import Toggle from './toggle';
-import logo from '../images/gas.png';
+import logo from '../images/kiwilogo.png';
 import Dropdown from '../components/dropdown';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="bg-gradient-to-r from-white to-stone-100 container px-5 py-1 border-[0.01em] border-white-700 rounded-md flex flex-wrap justify-between items-center mx-auto dark:border-gray-500 dark:bg-gradient-to-r dark:from-dmbglight dark:to-dmbgblack">
         <a href="/" className="flex items-center hover:scale-105 ease-in-out duration-300">
           <img src={logo} className="mr-3 h-6 sm:h-9" alt="Logo" />
-          <span className="hover:text-toxic self-center text-xl text-green-deep font-semibold whitespace-nowrap dark:text-white dark:hover:text-toxic">GaskGeek</span>
+          <span className="hover:text-toxic self-center text-xl text-green-deep font-semibold whitespace-nowrap dark:text-white dark:hover:text-toxic">Kiwi Note</span>
         </a>
   
         <div className="flex: order-last items-center inline-flex">
