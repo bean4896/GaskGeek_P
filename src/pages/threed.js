@@ -8,7 +8,7 @@ function threed() {
       <div className="body-container mt-10">
         {/* Side bar*/}
         <div className="flex flex-auto flex-shrink-0 flex-col mt-10">
-          <div className="fixed top-[9em] z-10 flex w-14 flex-col rounded-lg bg-white border-gray-200 border-[1px] dark:bg-dmbgblackie dark:border-neutral-500 dark:border-[1px] shadow-xl transition-all duration-300 hover:w-64 md:w-64">
+          <div className="fixed top-[9em] z-10 flex w-14 flex-col rounded-lg bg-white border-gray-200 border-[1px] dark:bg-dmbgblackie dark:border-neutral-500 dark:border-[1px] shadow-xl transition-all duration-300 hover:w-15 md:w-60">
             <div className="flex md:px-3 flex-grow flex-col justify-between overflow-y-auto overflow-x-hidden">
               <ul className="flex flex-col space-y-1 py-4">
                 <li>
@@ -17,7 +17,7 @@ function threed() {
                       <svg
                         className="sidebar-icon"
                         fill="currentColor"
-                        viewBox="0 0 20 20"
+                        viewBox="0 0 20 20" 
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         {" "}
