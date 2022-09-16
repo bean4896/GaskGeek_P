@@ -12,6 +12,7 @@ import Footer from './components/footer';
 import GoTopButton from './components/scrolltop';
 import Tutorials from './pages/tutorials';
 import Hamburger from './components/hamburger';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
     <div>
   <React.StrictMode >
     <ThemeProvider>
+    <ScrollToTop />
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/uiux" element={<Uiux />} />
