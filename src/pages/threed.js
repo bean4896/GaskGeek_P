@@ -127,8 +127,10 @@ function threed() {
             <h1 className="pagetitle ml-6">3D World</h1>
 
             {/* Model box*/}
+            
             <div className="rightbar-container ml-2">
-              <div className="py-10" id="Model">
+            <div className="pt-10" id="Model"></div>
+              <div className="py-10">
                 <h2 className="subtitle font-bold my-4 ml-4">Model</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 pl-4 gap-4">
                   <a
@@ -211,7 +213,8 @@ function threed() {
               </div>
 
               {/*Texture box*/}
-              <div className="py-10" id="Texture">
+              <div className="pt-10" id="Texture"></div>
+              <div className="py-10">
                 <h1 className="subtitle font-bold my-4 ml-4">Texture</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 pl-4 gap-4">
                   <a
@@ -292,7 +295,8 @@ function threed() {
               </div>
 
               {/* Render box*/}
-              <div className="py-10" id="Render">
+              <div className="pt-10" id="Render"></div>
+              <div className="py-10">
                 <h1 className="subtitle font-bold my-4 ml-4">Render</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 pl-4 gap-4">
                   <a
@@ -375,7 +379,8 @@ function threed() {
               </div>
 
               {/* Artists box*/}
-              <div className="py-10" id="Artists">
+              <div id="Artists" className="pt-10"></div>
+              <div className="py-10">
                 <h1 className="subtitle font-bold my-4 ml-4">
                   Artists and Teams
                 </h1>
@@ -497,7 +502,8 @@ function threed() {
               </div>
 
               {/* Plugin box*/}
-              <div className="py-10" id="Plugins">
+              <div id="Plugins" className="pt-10"></div>
+              <div className="py-10">
                 <h1 className="subtitle font-bold my-4 ml-4">Plugins</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 pl-4">
                   <a
