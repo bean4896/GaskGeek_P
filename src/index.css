@@ -19,7 +19,7 @@
     @apply text-neutral-500 dark:text-dmcontent font-normal md:text-sm 2xl:text-lg pb-5;
   }
   .container-box {
-    @apply cursor-pointer bg-white border-gray-200 border-[1px] dark:bg-dmbgblackie dark:border-neutral-500 dark:border-[1px] row-span-1 col-span-1 rounded-lg shadow-xl mb-5 lg:mb-0 hover:-translate-y-2 ease-in-out duration-200;
+    @apply cursor-pointer bg-white border-neutral-100 border-[1px] dark:bg-dmbgblackie dark:border-neutral-500 dark:border-[1px] row-span-1 col-span-1 rounded-lg mb-5 lg:mb-0 hover:-translate-y-2 ease-in-out duration-200 hover:shadow-[0_25px_20px_-20px_rgba(0,0,0,0.2)];
   }
   .body-container {
     @apply w-full container mx-auto;

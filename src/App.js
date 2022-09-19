@@ -16,7 +16,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   useEffect(() => {
-    document.body.className = 'p-4 bg-[#f5f5f5] min-h-screen dark:bg-dmbody';
+    document.body.className = 'p-4 bg-[#f9fbf7] min-h-screen dark:bg-dmbody';
     return () => { document.body.className = ''; }
   });
   return (
