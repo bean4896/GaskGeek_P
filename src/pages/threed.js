@@ -124,7 +124,7 @@ function threed() {
             layout
             className="ml-14 mb-10 h-full md:ml-64"
           >
-            <h1 className="pagetitle ml-6">3D World</h1>
+            <h1 className="pagetitle ml-6">3D Resources</h1>
 
             {/* Model box*/}
             
