@@ -13,6 +13,7 @@ import GoTopButton from './components/scrolltop';
 import Tutorials from './pages/tutorials';
 import Hamburger from './components/hamburger';
 import ScrollToTop from './components/ScrollToTop';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   useEffect(() => {
@@ -25,12 +26,13 @@ function App() {
     <ThemeProvider>
     <ScrollToTop />
     <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/uiux" element={<Uiux />} />
-    <Route path="/web" element={<Web />} />
-    <Route path="/threed" element={<Threed />} />
-    <Route path="/info" element={<Info />} />
-    <Route path="/tutorials" element={<Tutorials />} />
+    <Route path="/" exact element={<Home />} />
+    <Route exact path="/uiux" element={<Uiux />} />
+    <Route exact path="/web" element={<Web />} />
+    <Route exact path="/threed" element={<Threed />} />
+    <Route exact path="/info" element={<Info />} />
+    <Route exact path="/tutorials" element={<Tutorials />} />
+    <Route path='*'element={<NotFoundPage />} />
     </Routes>
     <Footer />
     <Hamburger />

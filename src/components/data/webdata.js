@@ -232,6 +232,22 @@ const WebData = [
       img: "./images/web_meta.png",
       desc: "Generate meta tags in one-click.",
     },
+    {
+      id: "31",
+      title: "Ant Design",
+      category: ["Framework"],
+      url:"https://ant.design/",
+      img: "./images/web_ant.webp",
+      desc: "An enterprise-class UI design language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.",
+    },
+    {
+      id: "32",
+      title: "VuePress",
+      category: ["Framework"],
+      url:"https://vuepress.vuejs.org/",
+      img: "./images/web_vuepress.jpg",
+      desc: "Minimalistic Vue-powered static site generator.",
+    },
   ];
    
   export default WebData;
