@@ -22,6 +22,7 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      'xxl': '1904px'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
