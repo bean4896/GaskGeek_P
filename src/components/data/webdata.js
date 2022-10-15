@@ -248,6 +248,14 @@ const WebData = [
       img: "./images/web_vuepress.jpg",
       desc: "Minimalistic Vue-powered static site generator.",
     },
+    {
+      id: "33",
+      title: "WebDev Interaction",
+      category: ["Interactive"],
+      url:"https://www.webdevforyou.com/",
+      img: "./images/web_wfinteraction.jpg",
+      desc: "Awesome Daily Website Interaction.",
+    }
   ];
    
   export default WebData;
