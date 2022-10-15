@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <div className="body-container max-w-[1440px]">
+      <div className="body-container">
         <div className="flex-col mt-10 lg:grid lg:gap-6 lg:grid-cols-4 lg:row-span-2 lg:pb-8 pt-4">
           <div className="order-first row-span-1 col-span-2 rounded-lg mb-5 ml-2 lg:mb-0">
             <div className="-mt-6">
