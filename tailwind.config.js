@@ -17,8 +17,12 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      '1xl': '1440px',
+      // => @media (min-width: 1440px) { ... }
+
+      '2xl': '1540px',
       // => @media (min-width: 1536px) { ... }
+      'xxl': '1904px'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -26,6 +30,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        kiwibrown:'#533228',
         dmorange:'#aa330b',
         dmbody:'#1a1a1a',
         dmtitle:'#e2e2e2',

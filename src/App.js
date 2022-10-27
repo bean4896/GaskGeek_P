@@ -12,23 +12,27 @@ import Footer from './components/footer';
 import GoTopButton from './components/scrolltop';
 import Tutorials from './pages/tutorials';
 import Hamburger from './components/hamburger';
+import ScrollToTop from './components/ScrollToTop';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   useEffect(() => {
-    document.body.className = 'p-4 bg-[#f5f5f5] min-h-screen dark:bg-dmbody';
+    document.body.className = 'p-4 bg-[#f9fbf7] min-h-screen dark:bg-dmbody';
     return () => { document.body.className = ''; }
   });
   return (
     <div>
   <React.StrictMode >
     <ThemeProvider>
+    <ScrollToTop />
     <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/uiux" element={<Uiux />} />
-    <Route path="/web" element={<Web />} />
-    <Route path="/threed" element={<Threed />} />
-    <Route path="/info" element={<Info />} />
-    <Route path="/tutorials" element={<Tutorials />} />
+    <Route path="/" exact element={<Home />} />
+    <Route exact path="/uiux" element={<Uiux />} />
+    <Route exact path="/web" element={<Web />} />
+    <Route exact path="/threed" element={<Threed />} />
+    <Route exact path="/info" element={<Info />} />
+    <Route exact path="/tutorials" element={<Tutorials />} />
+    <Route path='*'element={<NotFoundPage />} />
     </Routes>
     <Footer />
     <Hamburger />

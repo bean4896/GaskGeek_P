@@ -1,36 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-const mobileNav = [
-  {
-    id: "1",
-    link: "/web",
-    title: 'Web',
-    svg: "https://lusion.co/",
-  },
-  {
-    id: "2",
-    link: "/uiux",
-    title: 'UI/UX',
-    svg: "https://lusion.co/",
-  },
-  {
-    id: "3",
-    link: "/threed",
-    title: '3D',
-    svg: "https://lusion.co/",
-  },
-  {
-    id: "4",
-    link: "/tutorials",
-    title: 'Learn',
-    svg: "https://lusion.co/",
-  },
-]
+
 
 
 export default function Hamburger() {
-  const navigate = useNavigate();
   const ref = useRef()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -52,11 +26,6 @@ export default function Hamburger() {
 
   const toggleBtnHandler = () => {
     setIsMenuOpen(oldState => !oldState);
-  }
-
-  const navHandler = (mobileNav) => {
-    setIsMenuOpen(oldState => !oldState);
-    console.log(`${mobileNav.link}`);
   }
 
   return (
