@@ -255,6 +255,22 @@ const WebData = [
       url:"https://www.webdevforyou.com/",
       img: "./images/web_wfinteraction.jpg",
       desc: "Awesome Daily Website Interaction.",
+    },
+    {
+      id: "34",
+      title: "Whois",
+      category: ["Tools"],
+      url:"https://www.whois.com/whois/",
+      img: "./images/web_whois.png",
+      desc: "Identify website's domain & hosting information.",
+    },
+    {
+      id: "35",
+      title: "Zapier",
+      category: ["Tools"],
+      url:"https://zapier.com/",
+      img: "./images/web_zapier.webp",
+      desc: "Automate business flow.",
     }
   ];
    
