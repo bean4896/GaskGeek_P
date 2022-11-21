@@ -8,7 +8,6 @@ import React, { useState } from "react";
 const Tutorial = () => {
   const [item, setItem] = useState(TutorialData);
   const filterItem = (filcat) => {
-
       const newItem = TutorialData.filter((newVal) => {
           return newVal.category === filcat;
           // comparing category for displaying data
