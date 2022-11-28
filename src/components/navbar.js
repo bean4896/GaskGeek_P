@@ -1,6 +1,6 @@
 import React from 'react';
 import Toggle from './toggle';
-import logo from '../images/kiwilogo.png';
+import logo from '../images/logo_flat.svg';
 import Dropdown from '../components/dropdown';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="/" className="flex items-center hover:scale-105 ease-in-out duration-300">
           <img src={logo} className="mr-3 h-6 sm:h-9" alt="Logo" />
-          <span className="hover:text-toxic self-center text-xl text-green-deep font-semibold whitespace-nowrap dark:text-white dark:hover:text-toxic">Kiwi Note</span>
+          <span className="hover:text-toxic self-center text-xl text-green-deep font-semibold whitespace-nowrap dark:text-toxic dark:hover:text-toxic">Kiwi Note</span>
         </a>
   
         <div className="flex: order-last items-center inline-flex">
