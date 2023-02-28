@@ -11,7 +11,7 @@ export default function footer() {
             </div>
             <div className='md:justify-between md:flex my-10 ml-1 text-neutral-400'>
                 <div className='dark:text-neutral-500'>Built by <a href="https://www.keyi48.com" target="_blank" rel="noreferrer" className='textlink'>KeYi</a> | <a href="mailto:keyiwebproject@gmail.com" className='textlink' >keyiwebproject@gmail.com</a></div>
-                <div className='dark:text-neutral-500'>© 2022 | Last updated 2022/06/29</div>
+                <div className='dark:text-neutral-500'>© 2022 | Last updated 2023/02/25</div>
             </div>
         </div>
 
