@@ -10,7 +10,7 @@ export default function footer() {
                 <a target="_blank" href="https://twitter.com/intent/tweet?url=https://kiwinote.app/&text=A%20curated%20resource%20to%20help%20you%20find%20trending%20design,%20inspiration%20and%20latest%20web%20technologies." rel="noreferrer" className='textlink'>Twitter</a>
             </div>
             <div className='md:justify-between md:flex my-10 ml-1 text-neutral-400'>
-                <div className='dark:text-neutral-500'>Built by <a href="https://www.kkeyi.com" target="_blank" rel="noreferrer" className='textlink'>KeYi</a> | <a href="mailto:keyiwebproject@gmail.com" className='textlink' >keyiwebproject@gmail.com</a></div>
+                <div className='dark:text-neutral-500'>Built by <a href="https://www.keyi48.com" target="_blank" rel="noreferrer" className='textlink'>KeYi</a> | <a href="mailto:keyiwebproject@gmail.com" className='textlink' >keyiwebproject@gmail.com</a></div>
                 <div className='dark:text-neutral-500'>© 2022 | Last updated 2022/06/29</div>
             </div>
         </div>
