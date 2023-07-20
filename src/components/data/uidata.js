@@ -116,6 +116,14 @@ const UiData = [
     img: "./images/ui_artbreeder.webp",
     desc: "Generate and modify images of faces, landscapes, and paintings, among other categories.",
   },
+  {
+    id: "15",
+    title: "ColorSpace",
+    url: "https://mycolor.space/gradient3",
+    category: ["Colors"],
+    img: "./images/ui_colorSpace.jpg",
+    desc: "Generate 3 colors gradients in any direction with CSS.",
+  },
 ];
 
 
