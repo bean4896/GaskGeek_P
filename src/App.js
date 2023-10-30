@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Info from './pages/info';
 import Threed from './pages/threed';
 import Uiux from './pages/uiux';
+import Game from './pages/game';
 import Web from './pages/web';
 import { useEffect } from 'react';
 import Footer from './components/footer';
@@ -20,27 +21,30 @@ function App() {
     document.body.className = 'p-4 bg-[#f9fbf7] min-h-screen dark:bg-dmbody';
     return () => { document.body.className = ''; }
   });
+  
   return (
     <div>
-  <React.StrictMode >
-    <ThemeProvider>
-    <ScrollToTop />
-    <Routes>
-    <Route path="/" exact element={<Home />} />
-    <Route exact path="/uiux" element={<Uiux />} />
-    <Route exact path="/web" element={<Web />} />
-    <Route exact path="/threed" element={<Threed />} />
-    <Route exact path="/info" element={<Info />} />
-    <Route exact path="/tutorials" element={<Tutorials />} />
-    <Route path='*'element={<NotFoundPage />} />
-    </Routes>
-    <Footer />
-    <Hamburger />
-    <GoTopButton />
-    </ThemeProvider>
-  </React.StrictMode>
-  </div>
-)}
+      <React.StrictMode >
+        <ThemeProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route exact path="/uiux" element={<Uiux />} />
+            <Route exact path="/web" element={<Web />} />
+            <Route exact path="/game" element={<Game />} />
+            <Route exact path="/threed" element={<Threed />} />
+            <Route exact path="/info" element={<Info />} />
+            <Route exact path="/tutorials" element={<Tutorials />} />
+            <Route path='*' element={<NotFoundPage />} />
+          </Routes>
+          <Footer />
+          <Hamburger />
+          <GoTopButton />
+        </ThemeProvider>
+      </React.StrictMode>
+    </div>
+  )
+}
 
 export default App;
 
