@@ -51,17 +51,12 @@ const TutorialCard = ({ item }) => {
                                                     </svg>
                                                     {Val.badgethree}
                                                 </div>
-
-
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-
                             </div>
-
                         </motion.div>
-
                     );
                 })}
             </div>
