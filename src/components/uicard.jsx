@@ -7,7 +7,6 @@ const UiCard = ({ item }) => {
  
   return (
     <>
-
       <div className="columns-1 md:columns-2 lg:columns-4 gap-5 space-y-5 pb-10">
         {item.map((Val) => { 
           return ( 

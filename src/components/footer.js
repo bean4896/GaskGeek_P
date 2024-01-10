@@ -14,8 +14,5 @@ export default function footer() {
                 <div className='dark:text-neutral-500'>© 2023 | Last updated 2023/02/25</div>
             </div>
         </div>
-
-
-
     )
 }

@@ -19,7 +19,6 @@ const Filterweb = ({ filterItem, setItem, menuItems }) => {
         >
           All
         </button>
-
         {menuItems.map((Val, id) => {
           const clickFilterHandler = (e) => {
             filterItem(Val);
