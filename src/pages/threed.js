@@ -17,7 +17,7 @@ function threed() {
                       <svg
                         className="sidebar-icon"
                         fill="currentColor"
-                        viewBox="0 0 20 20" 
+                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         {" "}
@@ -127,9 +127,9 @@ function threed() {
             <h1 className="pagetitle ml-6">3D Resources</h1>
 
             {/* Model box*/}
-            
+
             <div className="rightbar-container ml-2">
-            <div className="pt-10" id="Model"></div>
+              <div className="pt-10" id="Model"></div>
               <div className="py-10">
                 <h2 className="subtitle font-bold my-4 ml-4">Model</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 pl-4 gap-4">
