@@ -121,6 +121,14 @@ const UiData = [
     img: "./images/ui_colorSpace.jpg",
     desc: "Generate 3 colors gradients in any direction with CSS.",
   },
+  {
+    id: "16",
+    title: "Mobbin",
+    url: "https://mobbin.com/browse",
+    category: ["Icons", "Mockup"],
+    img: "./images/ui_mobbin.jpg",
+    desc: "Mobbin offering a vast array of inspiration for mobile and web applications.",
+  },
 ];
 
 

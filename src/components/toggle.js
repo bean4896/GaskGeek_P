@@ -1,14 +1,14 @@
-import React from 'react';
-import { ThemeContext } from './themeContext';
+import React from "react";
+import { ThemeContext } from "./themeContext";
 
 const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   return (
-    <div className='pr-2'>
-      {theme === 'dark' ? (
+    <div className="pr-2">
+      {theme === "dark" ? (
         <button
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="text-neutral-500 dark:text-toxic shadow-none p-2 focus:outline-none text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
           <svg
@@ -28,7 +28,7 @@ const Toggle = () => {
         </button>
       ) : (
         <button
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="transition duration-150 ease-in-out text-neutral-500 dark:text-neutral-400 hover:text-toxic focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
           <svg

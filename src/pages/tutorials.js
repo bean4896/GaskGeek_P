@@ -7,6 +7,7 @@ import React, { useState } from "react";
 
 const Tutorial = () => {
   const [item, setItem] = useState(TutorialData);
+
   //   const filterItem = (filcat) => {
   //       const newItem = TutorialData.filter((newVal) => {
   //           return newVal.category === filcat;
@@ -14,6 +15,7 @@ const Tutorial = () => {
   //       });
   //       setItem(newItem);
   //   };
+
   return (
     <>
       <Navbar />

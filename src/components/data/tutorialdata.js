@@ -17,7 +17,7 @@ const TutorialData = [
     subtitle: "3D Online Course",
     category: "3D",
     url: "https://momentor.cn/",
-    img: './images/tutorial_momentor.webp',
+    img: "./images/tutorial_momentor.webp",
     badgeone: "3D & Motion Design Course",
     badgetwo: "Cinema 4D/Octane/AfterEffects",
     badgethree: "3D Industry Leader in China",
@@ -28,7 +28,7 @@ const TutorialData = [
     subtitle: "Three.js Tutorials",
     category: "Web",
     url: "https://threejs-journey.com/",
-    img: './images/tutorial_threejs.png',
+    img: "./images/tutorial_threejs.png",
     badgeone: "WebGL",
     badgetwo: "ThreeJS",
     badgethree: "Best Three.js course",
@@ -39,7 +39,7 @@ const TutorialData = [
     subtitle: "Web Online Course",
     category: "web develop",
     url: "https://designcode.io/",
-    img: './images/tutorial_designcode.svg',
+    img: "./images/tutorial_designcode.svg",
     badgeone: "Web Design",
     badgetwo: "SwiftUI/Figma/React",
     badgethree: "Best web design course",
@@ -50,7 +50,7 @@ const TutorialData = [
     subtitle: "Course   Youtuber",
     category: "web develop",
     url: "https://www.youtube.com/c/TimothyRicks/featured",
-    img: './images/tutorial_tommy.jpg',
+    img: "./images/tutorial_tommy.jpg",
     badgeone: "Web Design/Webflow Develop",
     badgetwo: "JavaScript/React.js",
     badgethree: "Creative interactive web design",
@@ -61,13 +61,11 @@ const TutorialData = [
     subtitle: "Developer community",
     category: "web develop",
     url: "https://juejin.cn/",
-    img: './images/tutorial_gold.png',
+    img: "./images/tutorial_gold.png",
     badgeone: "Developer community",
     badgetwo: "Full stack",
     badgethree: "Best developer community in China",
   },
 ];
-
-
 
 export default TutorialData;
